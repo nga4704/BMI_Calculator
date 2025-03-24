@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tính BMI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tính BMI</h1>
+  <div class="input-group">
+    <input type="number" id="height" placeholder="Chiều cao (cm)" />
+    <input type="number" id="weight" placeholder="Cân nặng (kg)" />
+    <button onclick="calculateBMI()">Tính BMI</button>
+    <button onclick="shareResult()">Chia sẻ kết quả</button>
+    <button onclick="takePhoto()">Chụp ảnh</button>
+  </div>
+  <div id="result"></div>
+  <img id="photo" width="250" style="display:none; margin-top:10px;" />
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
